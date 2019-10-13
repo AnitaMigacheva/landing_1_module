@@ -1,0 +1,135 @@
+@import "reset.css";
+@import "stylesheet.css";
+
+body {
+  font-family: "Raleway";
+}
+
+header > span {
+  font-weight: 800;
+  color: white;
+}
+
+span + span {
+  color: black;
+  position: absolute;
+  top: 90px;
+  right: 400px;
+  width: 60px;
+  text-align: center;
+
+}
+
+span + span::after {
+  content: url("rectangle.svg");
+  position: absolute;
+  bottom: -45px;
+  left: 14px;
+}
+
+header,
+section {
+  width: 750px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 80px;
+  margin-top: 80px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 48px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+header {
+  padding-top: 60px;
+}
+
+header img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* --------------------ССЫЛКИ----------------------- */
+
+section a {
+  text-decoration: none;
+  color: rgb(103, 0, 25);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* -------------------МЕНЮ-------------------------- */
+
+nav ol {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: space-between;
+  margin-top: 100px;
+  color: white;
+  letter-spacing: 0.04em;
+}
+
+nav li {
+
+}
+
+/* -----------------ВИДЫ ЗАНЯТИЙ------------------ */
+
+.lessons {
+  margin-top: 200px;
+}
+
+.type_of_lessons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.lesson {
+  flex-basis: 230px;
+}
+
+
+.lesson span:first-child {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+.lesson span {
+  display: block;
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+}
+
+
+/* ------------------ЛАЙФХАКИ--------------------- */
+
+/* .lifehacks img {
+  position: absolute;
+  height: 900px;
+  top: 1900;
+  left: 0;
+} */
