@@ -1,0 +1,165 @@
+body {
+  font-family: "Raleway";
+  background: url("img/шд.jpg") no-repeat;
+}
+
+header > span {
+  font-weight: 800;
+  color: white;
+}
+
+header span + span {
+  color: black;
+  position: absolute;
+  top: 120px;
+  right: 400px;
+}
+
+header span + span::after {
+  content: url("../img/rectangle.svg");
+  position: absolute;
+  bottom: -45px;
+  left: 14px;
+}
+
+header,
+section {
+  width: 750px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 84px;
+  margin-top: 110px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 48px;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+h2 + h3 {
+  margin-top: 30px;
+}
+
+h3 + p {
+  margin-top: 22px;
+}
+
+p + h3 {
+  margin-top: 68px;
+}
+
+header {
+  padding-top: 60px;
+}
+
+header img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* --------------------ССЫЛКИ----------------------- */
+
+section a {
+  text-decoration: none;
+  color: rgb(103, 0, 25);
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 + a {
+  color: rgba(241, 0, 58);
+  display: inline;
+  float: right;
+}
+
+/* -------------------МЕНЮ-------------------------- */
+nav ol {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: space-between;
+  margin-top: 160px;
+  color: white;
+  letter-spacing: 0.04em;
+}
+
+p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5em;
+  width: 500px;
+}
+
+section div:first-child:not(.lesson) {
+  margin-left: 200px;
+}
+
+/* -----------------ВИДЫ ЗАНЯТИЙ------------------ */
+.lessons {
+  margin-top: 390px;
+}
+
+.type_of_lessons {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.lesson {
+  display: flex;
+  flex-basis: 220px;
+  height: 280px;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lesson span {
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.lesson h4 {
+  padding: 24px 0 18px;
+}
+
+.lessons a {
+  position: relative;
+}
+.lessons a::after {
+  content: url("../img/arrow.svg");
+  position: absolute;
+  top: 2px;
+  right: -30px;
+}
+
+/* ------------------ЛАЙФХАКИ--------------------- */
+.lifehacks {
+  margin-top: 70px;
+}
+/* ----------------------------------------------- */
