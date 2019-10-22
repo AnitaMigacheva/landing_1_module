@@ -39,7 +39,7 @@ header div span::after {
 
 header,
 section {
-  width: 750px;
+  width: 700px;
   margin: 0 auto;
 }
 
@@ -80,7 +80,7 @@ header {
 .food,
 .cof,
 .res,
-.hse,
+.hse_text,
 .prog  {
   width: 390px;
 }
@@ -151,25 +151,25 @@ width: 100%;
 /* ------------------ЛАЙФХАКИ--------------------- */
 
 .lifehacks {
-  margin-top: 200px;
+  margin-top: 250px;
 }
 
-.lifehacks .read h3::before {
-  content: url("../img/read.svg");
+.lifehacks .work h3::before {
+  content: url("../img/place.svg");
   position: absolute;
   left: -40px;
   top: -7px;
 }
 
-.lifehacks .insp h3::before {
-  content: url("../img/heart.svg");
+.lifehacks .disc h3::before {
+  content: url("../img/star.svg");
   position: absolute;
   left: -40px;
   top: -7px;
 }
 
 .cof {
-  margin-top: 400px;
+  margin-top: 450px;
 }
 
 .work {
@@ -189,7 +189,24 @@ h3 {
   top: -7px;
 }
 
+.resources .insp h3::before {
+  content: url("../img/heart.svg");
+  position: absolute;
+  left: -40px;
+  top: -7px;
+}
+
 /* --------------------О ВЫШКЕ------------------- */
+
+.hse {
+  background-image: url("../img/hse_oct.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.about_hse {
+  padding-top: 300px;
+}
 
 .about_hse a {
   color: black;
@@ -199,4 +216,9 @@ h3 {
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
+}
+
+.hse_res {
+  margin-top: 400px;
+  padding-bottom: 400px;
 }

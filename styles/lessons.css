@@ -12,7 +12,7 @@
 
 .lesson {
   display: flex;
-  flex-basis: 220px;
+  flex-basis: 190px;
   height: 280px;
   justify-content: flex-start;
   align-content: center;
