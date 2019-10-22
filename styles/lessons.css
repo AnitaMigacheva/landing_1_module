@@ -1,0 +1,63 @@
+.lessons {
+  margin-top: 280px;
+}
+
+.type_of_lessons {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.lesson {
+  display: flex;
+  flex-basis: 220px;
+  height: 280px;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lesson span {
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.lesson h4 {
+  padding: 24px 0 18px;
+}
+
+.lessons h2 {
+  display: inline-block;
+}
+
+.anc {
+  display: inline-block;
+  width: 300px;
+  margin-left: auto;
+}
+
+.lessons a {
+  position: relative;
+  margin-right: 30px;
+}
+
+.lessons h3 + div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lessons a::after {
+  content: url("../img/arrow.svg");
+  position: absolute;
+  top: 2px;
+  right: -28px;
+}
+
+.les_text {
+  display: flex;
+  justify-content: space-between;
+}

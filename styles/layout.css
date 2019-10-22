@@ -1,6 +1,19 @@
 body {
   font-family: "Raleway";
-  background: url("img/шд.jpg") no-repeat;
+  background-image: url("../img/cover2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+h1 {
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 88px;
+}
+
+.header_txt {
+  margin-top: 140px;
+  position: relative;
 }
 
 header > span {
@@ -8,17 +21,19 @@ header > span {
   color: white;
 }
 
-header span + span {
+header div span {
   color: black;
   position: absolute;
-  top: 120px;
-  right: 400px;
+  top: -40px;
+  right: 110px;
+  font-weight: 800;
+  text-align: center;
 }
 
-header span + span::after {
+header div span::after {
   content: url("../img/rectangle.svg");
   position: absolute;
-  bottom: -45px;
+  bottom: -50px;
   left: 14px;
 }
 
@@ -28,23 +43,16 @@ section {
   margin: 0 auto;
 }
 
-h1 {
-  font-family: "Raleway";
-  font-weight: 900;
-  font-size: 84px;
-  margin-top: 110px;
-}
-
 /* ------------------------------- */
 
 h2 {
   font-weight: 900;
-  font-size: 48px;
+  font-size: 50px;
 }
 
 h3 {
   font-weight: 800;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 h4 {
@@ -69,52 +77,44 @@ header {
   padding-top: 60px;
 }
 
-header img {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  top: 0;
-  left: 0;
+.food,
+.cof,
+.res,
+.hse,
+.prog  {
+  width: 390px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.5em;
+}
+
+.read,
+.insp,
+.work,
+.disc {
+  width: 590px;
 }
 
 /* --------------------ССЫЛКИ----------------------- */
 
-section a {
+a {
   text-decoration: none;
-  color: rgb(103, 0, 25);
-  font-weight: 500;
 }
 
-a:hover {
-  text-decoration: underline;
+section a {
+  color: rgb(103, 0, 25);
+  font-weight: 500;
 }
 
 .lessons a {
   color: rgba(241, 0, 58);
 }
 
-nav a {
-	position: relative;
-	color: #00a650; /*задаём цвет ссылки*/
-	cursor: pointer;
-	line-height: 1; /*задаём высоту строки*/
-	text-decoration: none; /*убираем подчёркивание*/
-
-}
-nav a:after {
-	display: block;
-	position: absolute;
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background-color: #00a650; /*задаём цвет линии*/
-	content: "";
-	transition: width 0.3s ease-out; /*задаём время анимации*/
-}
-
-nav a:hover:after,
-nav a:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+section div:first-child:not(.lesson) {
+  margin-left: auto;
 }
 
 /* -------------------МЕНЮ-------------------------- */
@@ -123,99 +123,57 @@ nav ol {
   font-size: 16px;
   font-weight: 600;
   justify-content: space-between;
-  margin-top: 160px;
-  color: white;
+  margin-top: 140px;
   letter-spacing: 0.04em;
 }
 
-p {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.5em;
-  width: 550px;
+nav a {
+ color: white;
+ position: relative;
 }
 
-section div:first-child:not(.lesson) {
-  margin-left: 300px;
+nav a:after {
+ display: block;
+ position: absolute;
+ left: 0;
+ width: 0;
+ height: 3px;
+ background-color: white;
+ content: "";
+ transition: width 0.3s ease-out;
 }
 
-/* -----------------ВИДЫ ЗАНЯТИЙ------------------ */
-
-.lessons {
-  margin-top: 390px;
-}
-
-.type_of_lessons {
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-}
-
-.lesson {
-  display: flex;
-  flex-basis: 220px;
-  height: 280px;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.lesson span {
-  text-align: center;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.lesson h4 {
-  padding: 24px 0 18px;
-}
-
-.lessons h3 {
-  display: inline;
-}
-
-.lessons h2 {
-  padding-bottom: 30px;
-}
-
-.lessons a {
-  margin-left: 240px;
-  position: relative;
-  display: inline;
-}
-
-.lessons h3 + div {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.lessons a::after {
-  content: url("../img/arrow.svg");
-  position: absolute;
-  top: 4px;
-  right: -28px;
+nav a:hover:after,
+nav a:focus:after {
+width: 100%;
 }
 
 /* ------------------ЛАЙФХАКИ--------------------- */
+
 .lifehacks {
-  margin-top: 70px;
+  margin-top: 200px;
 }
 
-.lifehacks .place h3::before {
+.lifehacks .read h3::before {
   content: url("../img/read.svg");
   position: absolute;
   left: -40px;
   top: -7px;
 }
 
-.lifehacks . h3::before {
-  content: url("../img/star.svg");
+.lifehacks .insp h3::before {
+  content: url("../img/heart.svg");
   position: absolute;
   left: -40px;
   top: -7px;
+}
+
+.cof {
+  margin-top: 400px;
+}
+
+.work {
+  margin-top: 300px;
 }
 
 /* --------------------РЕСУРСЫ--------------------- */
@@ -231,24 +189,14 @@ h3 {
   top: -7px;
 }
 
-.resources .insp h3::before {
-  content: url("../img/star.svg");
-  position: absolute;
-  left: -40px;
-  top: -7px;
-}
+/* --------------------О ВЫШКЕ------------------- */
 
-/*--------------------ABOUT HSE--------------------*/
+.about_hse a {
+  color: black;
+}
 
 .hse_pic {
   margin-top: 100px;
   display: flex;
-  align-items: center;
-  align-content: center;
   justify-content: space-between;
-}
-
-.hse_pic a {
-  flex-basis: 110px;
-  color: black;
 }

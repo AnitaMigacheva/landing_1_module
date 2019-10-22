@@ -1,9 +1,1 @@
-<svg width="100" height="106" viewBox="0 0 100 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15.4453 29.2324V102.45H84.5539V29.2324" stroke="black" stroke-width="3"/>
-<line x1="94.7814" y1="35.6121" x2="49.159" y2="4.79337" stroke="black" stroke-width="3"/>
-<line y1="-1.5" x2="55.0564" y2="-1.5" transform="matrix(0.82865 -0.559767 -0.559767 -0.82865 4.37695 34.3691)" stroke="black" stroke-width="3"/>
-<rect x="31.8867" y="67.4966" width="11.0085" height="19.4136" stroke="black" stroke-width="3"/>
-<rect x="56.168" y="67.4966" width="11.0085" height="19.4136" stroke="black" stroke-width="3"/>
-<rect x="31.8867" y="35.7441" width="11.0085" height="18.4797" stroke="black" stroke-width="3"/>
-<rect x="56.168" y="35.7441" width="11.0085" height="18.4797" fill="white" stroke="black" stroke-width="3"/>
-</svg>
+<svg width="100" height="106" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4453 29.2324V102.45h69.1086V29.2324M94.7814 35.6121L49.159 4.79337M5.2166 35.612075L50.839087 4.793319" stroke="#000" stroke-width="3"/><path stroke="#000" stroke-width="3" d="M31.8867 67.4966h11.0085v19.4136H31.8867zM56.168 67.4966h11.0085v19.4136H56.168zM31.8867 35.7441h11.0085v18.4797H31.8867z"/><path fill="#fff" stroke="#000" stroke-width="3" d="M56.168 35.7441h11.0085v18.4797H56.168z"/></svg>
