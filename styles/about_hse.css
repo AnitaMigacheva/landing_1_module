@@ -1,0 +1,20 @@
+.hse {
+  background-image: url("../img/hse_oct.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.about_hse a {
+  color: black;
+}
+
+.hse_pic {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hse_res {
+  margin-top: 400px;
+  padding-bottom: 400px;
+}

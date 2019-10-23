@@ -1,18 +1,21 @@
 body {
   font-family: "Raleway";
+}
+
+.wrapper {
   background-image: url("../img/cover2.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 h1 {
-  font-family: "Raleway";
   font-weight: 900;
   font-size: 88px;
+  line-height: 0.8em;
 }
 
 .header_txt {
-  margin-top: 140px;
+  margin-top: 150px;
   position: relative;
 }
 
@@ -43,7 +46,9 @@ section {
   margin: 0 auto;
 }
 
-/* ------------------------------- */
+header {
+  padding-top: 60px;
+}
 
 h2 {
   font-weight: 900;
@@ -53,6 +58,7 @@ h2 {
 h3 {
   font-weight: 800;
   font-size: 28px;
+  position: relative;
 }
 
 h4 {
@@ -73,29 +79,40 @@ p + h3 {
   margin-top: 68px;
 }
 
-header {
-  padding-top: 60px;
+h2 + p {
+  margin-top: 30px;
 }
 
 .food,
 .cof,
-.res,
-.hse_text,
-.prog  {
+.fonts,
+.hse_text {
   width: 390px;
 }
 
 p {
   font-weight: 500;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.5em;
 }
 
-.read,
+.wh {
+  width: 600px;
+}
+
+.wh h3 {
+  margin-left: 36px;
+}
+
 .insp,
-.work,
 .disc {
-  width: 590px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.resources,
+.about_hse {
+  padding-top: 190px;
 }
 
 /* --------------------ССЫЛКИ----------------------- */
@@ -117,7 +134,7 @@ section div:first-child:not(.lesson) {
   margin-left: auto;
 }
 
-/* -------------------МЕНЮ-------------------------- */
+/* ---------------------МЕНЮ---------------------- */
 nav ol {
   display: flex;
   font-size: 16px;
@@ -148,8 +165,7 @@ nav a:focus:after {
 width: 100%;
 }
 
-/* ------------------ЛАЙФХАКИ--------------------- */
-
+/* --------------------ЛАЙФХАКИ-------------------- */
 .lifehacks {
   margin-top: 250px;
 }
@@ -158,14 +174,14 @@ width: 100%;
   content: url("../img/place.svg");
   position: absolute;
   left: -40px;
-  top: -7px;
+  top: -4px;
 }
 
 .lifehacks .disc h3::before {
   content: url("../img/star.svg");
   position: absolute;
   left: -40px;
-  top: -7px;
+  top: -6px;
 }
 
 .cof {
@@ -173,52 +189,39 @@ width: 100%;
 }
 
 .work {
-  margin-top: 300px;
+  margin-top: 460px;
 }
 
 /* --------------------РЕСУРСЫ--------------------- */
-
-h3 {
-  position: relative;
+.res {
+  background-image: url("../img/res.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .resources .read h3::before {
   content: url("../img/read.svg");
   position: absolute;
   left: -40px;
-  top: -7px;
+  top: -4px;
 }
 
 .resources .insp h3::before {
   content: url("../img/heart.svg");
   position: absolute;
   left: -40px;
-  top: -7px;
+  top: -4px;
 }
 
-/* --------------------О ВЫШКЕ------------------- */
-
-.hse {
-  background-image: url("../img/hse_oct.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+.prog {
+  padding-top: 200px;
+  width: 600px;
 }
 
-.about_hse {
-  padding-top: 300px;
+.prog img {
+  margin: 80px 0;
 }
 
-.about_hse a {
-  color: black;
-}
-
-.hse_pic {
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.hse_res {
-  margin-top: 400px;
-  padding-bottom: 400px;
+.read {
+  margin-top: 200px;
 }
