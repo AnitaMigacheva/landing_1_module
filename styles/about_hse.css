@@ -19,11 +19,6 @@
   width: 160px;
 }
 
-.hse a:hover {
-  color: black;
-  text-decoration: underline;
-}
-
 .hse_pic img {
   display: block;
   margin: 0 auto;
