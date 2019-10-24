@@ -14,8 +14,6 @@
   display: flex;
   flex-basis: 190px;
   height: 280px;
-  justify-content: flex-start;
-  align-content: center;
   align-items: center;
   flex-direction: column;
 }

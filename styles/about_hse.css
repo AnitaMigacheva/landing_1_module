@@ -9,12 +9,32 @@
 }
 
 .hse_pic {
-  margin-top: 100px;
+  margin-top: 90px;
   display: flex;
   justify-content: space-between;
+  align-content: flex-end;
+}
+
+.hse_pic a {
+  width: 160px;
+}
+
+.hse a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.hse_pic img {
+  display: block;
+  margin: 0 auto;
 }
 
 .hse_res {
   margin-top: 400px;
-  padding-bottom: 400px;
+  padding-bottom: 140px;
+}
+
+.hse_pic h4 {
+  padding-top: 24px;
+  text-align: center;
 }

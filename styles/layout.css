@@ -121,6 +121,15 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
+section a:hover {
+  text-decoration: underline;
+  color: rgb(211, 0, 51);
+}
+
 section a {
   color: rgb(103, 0, 25);
   font-weight: 500;
