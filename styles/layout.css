@@ -1,5 +1,10 @@
 body {
-  font-family: "Raleway";
+  font-family: "Raleway", "Montserrat", sans-serif;
+}
+
+* {
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
@@ -14,7 +19,7 @@ h1 {
   line-height: 0.8em;
 }
 
-.header_txt {
+.header_text {
   margin-top: 150px;
   position: relative;
 }
@@ -68,7 +73,8 @@ h4 {
   letter-spacing: 0.04em;
 }
 
-h2 + h3 {
+h2 + h3,
+h2 + p {
   margin-top: 30px;
 }
 
@@ -78,10 +84,6 @@ h3 + p {
 
 p + h3 {
   margin-top: 68px;
-}
-
-h2 + p {
-  margin-top: 30px;
 }
 
 .food,
@@ -108,7 +110,7 @@ p {
 .insp,
 .disc {
   margin-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .resources,
@@ -187,7 +189,7 @@ width: 100%;
 
 /* --------------------ЛАЙФХАКИ-------------------- */
 .lifehacks {
-  margin-top: 300px;
+  margin-top: 270px;
 }
 
 .lifehacks .work h3::before {
@@ -209,7 +211,7 @@ width: 100%;
 }
 
 .work {
-  margin-top: 460px;
+  margin-top: 500px;
 }
 
 /* --------------------РЕСУРСЫ--------------------- */
@@ -247,8 +249,4 @@ width: 100%;
 
 .read {
   margin-top: 320px;
-}
-
-.test {
-  padding: 200px 0;
 }
